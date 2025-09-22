@@ -34,7 +34,7 @@ const items = [
       <template #end>
         <div class="flex-column mr-3">
           <pv-button v-for="item in items" :key="item.label" as-child v-slot="slotProps">
-            <router-link to="item.to" :class="slotProps['class']">{{t(item.label)}}</router-link>
+            <router-link :to="item.to" :class="slotProps['class']">{{t(item.label)}}</router-link>
           </pv-button>
         </div>
         <language-switcher/>
