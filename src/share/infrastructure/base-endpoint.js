@@ -4,7 +4,7 @@
  * It can be extended by specific endpoint classes
  */
 export class BaseEndpoint {
-    constructor({ baseApi, endpointPath }) {
+    constructor( baseApi, endpointPath ) {
         this.http = baseApi.http;
         this.endpointPath = endpointPath;
     }
